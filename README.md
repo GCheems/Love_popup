@@ -63,18 +63,6 @@ PHRASES = [
 - Linux / macOS：没有 `run.bat`/`run.vbs`，直接 `python love_popup.py` 即可（窗口外观受平台主题影响）。
 - 字体 / Emoji 显示：取决于系统字体支持，必要时调整 `PHRASES` / `EMOJIS`。
 
-## 可选：打包为可执行文件（Windows）
-使用 PyInstaller 打包方便分发：
-
-```bash
-pip install pyinstaller
-pyinstaller --noconsole --onefile love_popup.py
-# 可加图标
-# pyinstaller --noconsole --onefile --icon heart.ico love_popup.py
-```
-
-生成的可执行文件位于 `dist/` 目录。
-
 ## 文件说明
 - `love_popup.py`：主程序（Tkinter UI + 弹窗逻辑）
 - `run.bat`：Windows 批处理启动入口（调用 VBS，避免黑框）
