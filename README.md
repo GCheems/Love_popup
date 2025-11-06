@@ -80,6 +80,3 @@ pyinstaller --noconsole --onefile love_popup.py
 - `run.bat`：Windows 批处理启动入口（调用 VBS，避免黑框）
 - `run.vbs`：优先使用 `pyw/pythonw` 无控制台启动
 
----
-若需要英文版 README、加入截图/动图或添加发行版打包脚本，请告诉我～
-
